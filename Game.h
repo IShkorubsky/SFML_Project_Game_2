@@ -3,11 +3,7 @@
 #include <iostream>
 #include <ctime>
 
-#include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Network.hpp>
+#include "Player.h"
 
 class Game
 {
@@ -15,6 +11,9 @@ private:
 	sf::VideoMode videoMode;
 	sf::RenderWindow* window;
 	bool endGame;
+	sf::Event sfmlEvent;
+
+	Player player;
 
 	void initializeVariables();
 	void initializeWindow();
@@ -29,6 +28,9 @@ public:
 	//Modifiers
 
 	//Functions
+	const bool running() const;
+	void pollEvents();
+
 	void update();
 	void render();
 };

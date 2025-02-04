@@ -1,7 +1,8 @@
 ﻿  Game.cpp
   main.cpp
+  Player.cpp
   Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 1 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 23 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   SFML Project - Game 2.vcxproj -> C:\Users\illya\source\repos\SFML Project - Game 2\x64\Release\SFML Project - Game 2.exe
