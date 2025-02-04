@@ -9,6 +9,7 @@ void Game::initializeWindow()
 {
 	this->videoMode = sf::VideoMode(800, 600);
 	this->window = new sf::RenderWindow(this->videoMode, "SFML Project - Game 2", sf::Style::Close | sf::Style::Titlebar);
+	this->window->setFramerateLimit(60);
 }
 
 //Constructors and Destructors
@@ -49,6 +50,8 @@ void Game::pollEvents()
 void Game::update()
 {
 	this->pollEvents();
+
+	this->player.update(this->window);
 }
 
 void Game::render()
