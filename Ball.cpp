@@ -9,7 +9,7 @@ void Ball::initializeShape()
 
 Ball::Ball()
 {
-
+	this->initializeShape();
 }
 
 Ball::~Ball()
