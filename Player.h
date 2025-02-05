@@ -11,8 +11,11 @@ class Player
 {
 private:
 	sf::RectangleShape shape;
-
+	
 	float movementSpeed;
+
+	int hp;
+	int hpMax;
 
 	void initializeVariables();
 	void initializeShape();

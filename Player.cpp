@@ -2,7 +2,10 @@
 
 void Player::initializeVariables()
 {
-	this->movementSpeed = 10.f;
+	this->movementSpeed = 5.f;
+
+	this->hpMax = 10;
+	this->hp = hpMax;
 }
 
 void Player::initializeShape()
