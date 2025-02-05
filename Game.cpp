@@ -68,12 +68,27 @@ void Game::spawnBalls()
 	}
 }
 
+/// <summary>
+/// Check for collision
+/// </summary>
+void Game::updateCollision()
+{
+	for (size_t i = 0; i < balls.size(); i++)
+	{
+		if (this->player.getShape().getGlobalBounds().intersects(this->balls[i].getShape().getGlobalBounds()))
+		{
+			this->balls.erase(this->balls.begin() + i);
+		}
+	}
+}
+
 void Game::update()
 {
 	this->pollEvents();
 
 	this->spawnBalls();
 	this->player.update(this->window);
+	this->updateCollision();
 }
 
 void Game::render()

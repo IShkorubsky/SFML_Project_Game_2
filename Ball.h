@@ -16,6 +16,8 @@ public:
 		Ball(sf::RenderWindow& window);
 		virtual ~Ball();
 
+		const sf::CircleShape getShape() const;
+
 		//Functions
 		void update();
 		void render(sf::RenderTarget& target);

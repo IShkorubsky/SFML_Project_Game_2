@@ -20,6 +20,11 @@ Ball::~Ball()
 
 }
 
+const sf::CircleShape Ball::getShape() const
+{
+	return this->shape;
+}
+
 //Functions
 void Ball::update()
 {

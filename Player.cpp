@@ -27,6 +27,11 @@ Player::~Player()
 
 }
 
+const sf::RectangleShape& Player::getShape() const
+{
+	return this->shape;
+}
+
 /// <summary>
 /// Keyboard input
 /// </summary>

@@ -39,6 +39,7 @@ public:
 	void pollEvents();
 
 	void spawnBalls();
+	void updateCollision();
 	void update();
 	void render();
 };
