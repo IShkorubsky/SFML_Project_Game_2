@@ -1,5 +1,8 @@
 #include "Player.h"
 
+/// <summary>
+/// Initializes the variables of the player
+/// </summary>
 void Player::initializeVariables()
 {
 	this->movementSpeed = 5.f;
@@ -8,12 +11,20 @@ void Player::initializeVariables()
 	this->hp = hpMax;
 }
 
+/// <summary>
+/// Initializes the shape of the player
+/// </summary>
 void Player::initializeShape()
 {
 	this->shape.setFillColor(sf::Color::Green);
 	this->shape.setSize(sf::Vector2f(50.f, 50.f));
 }
 
+/// <summary>
+/// Constructor
+/// </summary>
+/// <param name="x"></param>
+/// <param name="y"></param>
 Player::Player(float x, float y)
 {
 	this->shape.setPosition(x, y);
@@ -22,6 +33,9 @@ Player::Player(float x, float y)
 	this->initializeShape();
 }
 
+/// <summary>
+/// Deconstructor
+/// </summary>
 Player::~Player()
 {
 
@@ -87,6 +101,10 @@ void Player::updateWindowBoundsCollision(const sf::RenderTarget* target)
 	}
 }
 
+/// <summary>
+/// Updates the player
+/// </summary>
+/// <param name="target"></param>
 void Player::update(const sf::RenderTarget* target)
 {
 	updateInput();
@@ -94,6 +112,10 @@ void Player::update(const sf::RenderTarget* target)
 	updateWindowBoundsCollision(target);
 }
 
+/// <summary>
+/// Renders the player to the screen
+/// </summary>
+/// <param name="target"></param>
 void Player::render(sf::RenderTarget* target)
 {
 	target->draw(this->shape);

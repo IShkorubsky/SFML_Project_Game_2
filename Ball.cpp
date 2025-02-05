@@ -1,5 +1,9 @@
 #include "Ball.h"
 
+/// <summary>
+/// Initializes the variables of the ball
+/// </summary>
+/// <param name="window"></param>
 void Ball::initializeShape(sf::RenderWindow& window)
 {
 	this->shape.setRadius(static_cast<float>(rand() % 10 + 10));
@@ -10,28 +14,49 @@ void Ball::initializeShape(sf::RenderWindow& window)
 		static_cast<float>(rand()% window.getSize().y - this->shape.getGlobalBounds().height)));
 }
 
+/// <summary>
+/// Constructor
+/// </summary>
+/// <param name="window"></param>
 Ball::Ball(sf::RenderWindow& window)
 {
 	this->initializeShape(window);
 }
 
+/// <summary>
+/// Deconstructor
+/// </summary>
 Ball::~Ball()
 {
 
 }
 
+/// <summary>
+/// Returns the shape of the ball
+/// </summary>
+/// <returns></returns>
 const sf::CircleShape Ball::getShape() const
 {
 	return this->shape;
 }
 
-//Functions
+#pragma region Functions
+
+/// <summary>
+/// Updates the ball during runtime
+/// </summary>
 void Ball::update()
 {
 
 }
 
+/// <summary>
+/// Renders the ball to the screen
+/// </summary>
+/// <param name="target"></param>
 void Ball::render(sf::RenderTarget& target)
 {
 	target.draw(this->shape);
 }
+
+#pragma endregion

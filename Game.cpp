@@ -1,5 +1,8 @@
 #include "Game.h"
 
+/// <summary>
+/// Initializes the variables of the game
+/// </summary>
 void Game::initializeVariables()
 {
 	this->endGame = false;
@@ -8,6 +11,9 @@ void Game::initializeVariables()
 	this->maxBalls = 10;
 }
 
+/// <summary>
+/// Initializes the game window
+/// </summary>
 void Game::initializeWindow()
 {
 	this->videoMode = sf::VideoMode(800, 600);
@@ -15,24 +21,33 @@ void Game::initializeWindow()
 	this->window->setFramerateLimit(60);
 }
 
-//Constructors and Destructors
+/// <summary>
+/// Constructor
+/// </summary>
 Game::Game()
 {
 	this->initializeVariables();
 	this->initializeWindow();
 }
 
+/// <summary>
+/// Deconstructor
+/// </summary>
 Game::~Game()
 {
 	delete this->window;
 }
 
-//Functions
+#pragma region Functions
+
 const bool Game::running() const
 {
 	return this->window->isOpen();
 }
 
+/// <summary>
+/// Global event poll
+/// </summary>
 void Game::pollEvents()
 {
 	while (this->window->pollEvent(this->sfmlEvent))
@@ -42,7 +57,7 @@ void Game::pollEvents()
 		case sf::Event::Closed:
 			this->window->close();
 		case sf::Event::KeyPressed:
-			if (this->sfmlEvent.key.code == sf::Keyboard::Escape) 
+			if (this->sfmlEvent.key.code == sf::Keyboard::Escape)
 			{
 				this->window->close();
 			}
@@ -51,13 +66,16 @@ void Game::pollEvents()
 	}
 }
 
+/// <summary>
+/// Spawns the balls based on a timer and adds them to the vector
+/// </summary>
 void Game::spawnBalls()
 {
 	if (this->spawnTimer < this->spawnTimerMax)
 	{
 		this->spawnTimer += 1.f;
 	}
-	else 
+	else
 	{
 		if (this->balls.size() < this->maxBalls)
 		{
@@ -82,6 +100,9 @@ void Game::updateCollision()
 	}
 }
 
+/// <summary>
+/// Game main Update function
+/// </summary>
 void Game::update()
 {
 	this->pollEvents();
@@ -91,6 +112,9 @@ void Game::update()
 	this->updateCollision();
 }
 
+/// <summary>
+/// Game main Render function
+/// </summary>
 void Game::render()
 {
 	this->window->clear();
@@ -98,10 +122,12 @@ void Game::render()
 	//Render objects
 	this->player.render(this->window);
 
-	for(auto i : this->balls)
+	for (auto i : this->balls)
 	{
 		i.render(*this->window);
 	}
 
 	this->window->display();
 }
+
+#pragma endregion
