@@ -61,7 +61,7 @@ void Game::spawnBalls()
 	{
 		if (this->balls.size() < this->maxBalls)
 		{
-			this->balls.push_back(Ball());
+			this->balls.push_back(Ball(*this->window));
 
 			this->spawnTimer = 0;
 		}
