@@ -41,6 +41,12 @@ Player::~Player()
 
 }
 
+#pragma region Functions
+
+/// <summary>
+/// Returns the shape of the player
+/// </summary>
+/// <returns></returns>
 const sf::RectangleShape& Player::getShape() const
 {
 	return this->shape;
@@ -51,23 +57,23 @@ const sf::RectangleShape& Player::getShape() const
 /// </summary>
 void Player::updateInput()
 {
-	
+
 	//Left and Right
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
 	{
-		this->shape.move(-this->movementSpeed,0.f);
+		this->shape.move(-this->movementSpeed, 0.f);
 	}
-	else if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
 	{
 		this->shape.move(this->movementSpeed, 0.f);
 	}
-	
+
 	//Up and Down
-	if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
 	{
 		this->shape.move(0.f, -this->movementSpeed);
 	}
-	else if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
 	{
 		this->shape.move(0.f, this->movementSpeed);
 	}
@@ -120,3 +126,4 @@ void Player::render(sf::RenderTarget* target)
 {
 	target->draw(this->shape);
 }
+#pragma endregion
