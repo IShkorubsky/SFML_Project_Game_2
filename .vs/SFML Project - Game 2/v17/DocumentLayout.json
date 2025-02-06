@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|solutionrelative:Ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|solutionrelative:Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|solutionrelative:Ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC0D293D-468E-4A73-A675-6378DF210B6D}|SFML Project - Game 2.vcxproj|C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,25 +38,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Ball.cpp",
-              "DocumentMoniker": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Ball.cpp",
-              "RelativeDocumentMoniker": "Ball.cpp",
-              "ToolTip": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Ball.cpp",
-              "RelativeToolTip": "Ball.cpp",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwA0AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-04T22:08:13.551Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -65,22 +48,24 @@
               "RelativeDocumentMoniker": "Ball.h",
               "ToolTip": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Ball.h",
               "RelativeToolTip": "Ball.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-04T22:07:33.018Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Player.cpp",
-              "RelativeDocumentMoniker": "Player.cpp",
-              "ToolTip": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Player.cpp",
-              "RelativeToolTip": "Player.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Ball.cpp",
+              "DocumentMoniker": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Ball.cpp",
+              "RelativeDocumentMoniker": "Ball.cpp",
+              "ToolTip": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Ball.cpp",
+              "RelativeToolTip": "Ball.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAAAqwBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-04T21:23:27.136Z",
+              "WhenOpened": "2025-02-04T22:08:13.551Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -91,35 +76,52 @@
               "RelativeDocumentMoniker": "Player.h",
               "ToolTip": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Player.h",
               "RelativeToolTip": "Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-04T21:22:53.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Game.h",
-              "DocumentMoniker": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Game.h",
-              "RelativeDocumentMoniker": "Game.h",
-              "ToolTip": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Game.h",
-              "RelativeToolTip": "Game.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-01T17:05:56.517Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Player.cpp",
+              "RelativeDocumentMoniker": "Player.cpp",
+              "ToolTip": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Player.cpp",
+              "RelativeToolTip": "Player.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-04T21:23:27.136Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.h",
+              "DocumentMoniker": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Game.h",
+              "RelativeDocumentMoniker": "Game.h",
+              "ToolTip": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Game.h",
+              "RelativeToolTip": "Game.h",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-01T17:05:56.517Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Game.cpp",
               "RelativeDocumentMoniker": "Game.cpp",
               "ToolTip": "C:\\Users\\illya\\source\\repos\\SFML Project - Game 2\\Game.cpp",
               "RelativeToolTip": "Game.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAHsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAJcAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-01T17:06:01.654Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -132,7 +134,12 @@
               "RelativeToolTip": "main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-01T17:04:51.457Z"
+              "WhenOpened": "2025-02-01T17:04:51.457Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             }
           ]
         }

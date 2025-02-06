@@ -82,7 +82,7 @@ void Game::pollEvents()
 		case sf::Event::Closed:
 			this->window->close();
 		case sf::Event::KeyPressed:
-			if (this->sfmlEvent.key.code == sf::Keyboard::Escape)
+			if (this->sfmlEvent.key.code == sf::Keyboard::Escape || player.getHp() <= 0)
 			{
 				this->window->close();
 			}
@@ -120,8 +120,23 @@ void Game::updateCollision()
 	{
 		if (this->player.getShape().getGlobalBounds().intersects(this->balls[i].getShape().getGlobalBounds()))
 		{
+			switch (this->balls[i].getType())
+			{
+			case BallType::DEFAULT:
+				this->points++;
+				break;
+			case BallType::DAMAGING:
+				this->player.takeDamage(1);
+				break;
+			case BallType::HEALING:
+				this->player.gainHealth(1);
+				break;
+			default:
+				break;
+			}
+
+			//Remove the ball
 			this->balls.erase(this->balls.begin() + i);
-			points++;
 		}
 	}
 }
@@ -133,7 +148,8 @@ void Game::updateGui()
 {
 	std::stringstream ss;
 
-	ss << "- Points: " << this->points;
+	ss << "- Points: " << this->points << "\n" 
+		<< "- Health: " << this->player.getHp() << " / " << this->player.getHpMax();
 
 	this->guiText.setString(ss.str());
 }
