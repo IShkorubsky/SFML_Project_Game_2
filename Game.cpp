@@ -9,6 +9,8 @@ void Game::initializeVariables()
 	this->spawnTimerMax = 10.f;
 	this->spawnTimer = this->spawnTimerMax;
 	this->maxBalls = 10;
+	this->points = 0;
+
 }
 
 /// <summary>
@@ -22,12 +24,35 @@ void Game::initializeWindow()
 }
 
 /// <summary>
+/// Initializes font to be used in the game
+/// </summary>
+void Game::initializeFont()
+{
+	if (!this->font.loadFromFile("Fonts/Hello Cupcake.otf"))
+	{
+		std::cout << "ERROR:GAME:INITIALIZEFONT::COULD NOT LOAD Hello Cupcake.otf" << "\n";
+	}
+}
+
+/// <summary>
+/// Initializes the text used in the game
+/// </summary>
+void Game::initializeText()
+{
+	this->guiText.setFont(this->font);
+	this->guiText.setFillColor(sf::Color::White);
+	this->guiText.setCharacterSize(50);
+}
+
+/// <summary>
 /// Constructor
 /// </summary>
 Game::Game()
 {
 	this->initializeVariables();
 	this->initializeWindow();
+	this->initializeFont();
+	this->initializeText();
 }
 
 /// <summary>
@@ -96,8 +121,21 @@ void Game::updateCollision()
 		if (this->player.getShape().getGlobalBounds().intersects(this->balls[i].getShape().getGlobalBounds()))
 		{
 			this->balls.erase(this->balls.begin() + i);
+			points++;
 		}
 	}
+}
+
+/// <summary>
+/// Updates de game UI
+/// </summary>
+void Game::updateGui()
+{
+	std::stringstream ss;
+
+	ss << "- Points: " << this->points;
+
+	this->guiText.setString(ss.str());
 }
 
 /// <summary>
@@ -110,6 +148,12 @@ void Game::update()
 	this->spawnBalls();
 	this->player.update(this->window);
 	this->updateCollision();
+	this->updateGui();
+}
+
+void Game::renderGui(sf::RenderTarget* target)
+{
+	target->draw(this->guiText);
 }
 
 /// <summary>
@@ -126,6 +170,8 @@ void Game::render()
 	{
 		i.render(*this->window);
 	}
+
+	this->renderGui(this->window);
 
 	this->window->display();
 }
