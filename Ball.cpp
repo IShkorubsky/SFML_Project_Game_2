@@ -6,7 +6,7 @@
 /// <param name="window"></param>
 void Ball::initializeShape(sf::RenderWindow& window)
 {
-	this->shape.setRadius(static_cast<float>(rand() % 10 + 10));
+	this->shape.setRadius(static_cast<float>(rand()% 10 + 10));
 	sf::Color color(rand() % 255 + 1, rand()% 255 + 1, rand()% 255 + 1);
 	this->shape.setFillColor(color);
 	this->shape.setPosition(sf::Vector2f(
@@ -18,9 +18,11 @@ void Ball::initializeShape(sf::RenderWindow& window)
 /// Constructor
 /// </summary>
 /// <param name="window"></param>
-Ball::Ball(sf::RenderWindow& window)
+Ball::Ball(sf::RenderWindow& window, int type)
 {
 	this->initializeShape(window);
+
+	this->type = type;
 }
 
 /// <summary>
@@ -38,6 +40,15 @@ Ball::~Ball()
 const sf::CircleShape Ball::getShape() const
 {
 	return this->shape;
+}
+
+/// <summary>
+/// Returns the type of ball
+/// </summary>
+/// <returns></returns>
+const int& Ball::getType() const
+{
+	return this->type;
 }
 
 #pragma region Functions

@@ -52,6 +52,40 @@ const sf::RectangleShape& Player::getShape() const
 	return this->shape;
 }
 
+const int& Player::getHp() const
+{
+	return this->hp;
+}
+
+const int& Player::getHpMax() const
+{
+	return this->hpMax;
+}
+
+void Player::takeDamage(const int damage)
+{
+	if (this->hp >= 0)
+	{
+		this->hp -= damage;
+	}
+	else
+	{
+		//Gameover
+	}
+}
+
+void Player::gainHealth(const int health)
+{
+	if (this->hp < this->hpMax) 
+	{
+		this->hp += health;
+	}
+	else 
+	{
+		this->hp = hpMax;
+	}
+}
+
 /// <summary>
 /// Keyboard input
 /// </summary>
