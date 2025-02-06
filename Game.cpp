@@ -104,11 +104,27 @@ void Game::spawnBalls()
 	{
 		if (this->balls.size() < this->maxBalls)
 		{
-			this->balls.push_back(Ball(*this->window, rand() % BallType::NROFTYPES));
+			this->balls.push_back(Ball(*this->window, this->randomizeBallType()));
 
 			this->spawnTimer = 0;
 		}
 	}
+}
+
+const int Game::randomizeBallType()
+{
+	int type = BallType::DEFAULT;
+	int randValue = rand()% 100 + 1;
+
+	if (randValue > 60 && randValue <= 80)
+	{
+		type = BallType::DAMAGING;
+	}
+	else if (randValue > 80 && randValue <= 100) {
+		type = BallType::HEALING;
+	}
+
+	return type;
 }
 
 /// <summary>
